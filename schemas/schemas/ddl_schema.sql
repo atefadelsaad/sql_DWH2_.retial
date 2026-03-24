@@ -7,4 +7,4 @@ GO
 CREATE SCHEMA gold;
 GO
 
-select * from atef
+
