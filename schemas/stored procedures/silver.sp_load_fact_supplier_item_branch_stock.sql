@@ -4,6 +4,7 @@ AS
 DECLARE @from_date  DATE = (SELECT DATEADD(DAY,-365,GETDATE()));
 DECLARE @to_date DATE =  (SELECT GETDATE());
 BEGIN
+	TRUNCATE TABLE silver.fac_supplier_item_branch_stock
     INSERT INTO silver.fac_supplier_item_branch_stock(
 		supplier_no ,
 		branch ,
