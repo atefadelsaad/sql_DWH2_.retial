@@ -1,6 +1,7 @@
 CREATE OR ALTER PROCEDURE bronze.load_stk_order_items
 AS
 BEGIN
+TRUNCATE TABLE bronze.erp_stk_order_items
 INSERT INTO db_Atef.[bronze].[erp_stk_order_items](
 [company]
            ,[sector]
