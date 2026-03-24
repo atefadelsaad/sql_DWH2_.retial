@@ -1,6 +1,7 @@
 CREATE OR ALTER PROCEDURE bronze.load_items
 AS
 BEGIN
+    TRUNCATE TABLE bronze.erp_sys_item 
     INSERT INTO db_Atef.bronze.erp_sys_item (
         itemean,
         itemclass,
